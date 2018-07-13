@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 905248127}
   - component: {fileID: 905248132}
   - component: {fileID: 905248131}
+  - component: {fileID: 905248133}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -161,7 +162,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b8c956a11fbe845f78a0c46518cc73df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -224,6 +225,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8011f0009bc114fac8691c423eb6d296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &905248133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 905248126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8011f0009bc114fac8691c423eb6d296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1085053371
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +248,7 @@ GameObject:
   - component: {fileID: 1085053374}
   - component: {fileID: 1085053373}
   - component: {fileID: 1085053376}
+  - component: {fileID: 1085053377}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -283,7 +296,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b8c956a11fbe845f78a0c46518cc73df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -311,6 +324,17 @@ MeshFilter:
   m_GameObject: {fileID: 1085053371}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1085053376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085053371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8011f0009bc114fac8691c423eb6d296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1085053377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
