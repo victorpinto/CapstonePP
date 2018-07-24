@@ -2276,7 +2276,7 @@ GameObject:
   - component: {fileID: 4092990689353452}
   - component: {fileID: 54236016211498528}
   - component: {fileID: 114350552914032878}
-  - component: {fileID: 114155784309693438}
+  - component: {fileID: 114999416061454724}
   m_Layer: 0
   m_Name: 3rd Person Player
   m_TagString: Player
@@ -2293,6 +2293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4101078501419106}
   - component: {fileID: 114613385641083994}
+  - component: {fileID: 114271987238316044}
   m_Layer: 0
   m_Name: ThirdPersonCameraV1
   m_TagString: Untagged
@@ -3959,7 +3960,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1124248186498684}
-  m_LocalRotation: {x: 0.027678287, y: -0.70656615, z: 0.027678387, w: 0.70656365}
+  m_LocalRotation: {x: 0.027678255, y: -0.70656615, z: 0.02767836, w: 0.70656365}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5572,23 +5573,17 @@ MonoBehaviour:
   m_SoftZoneHeight: 0
   m_BiasX: 0
   m_BiasY: 0
---- !u!114 &114155784309693438
+--- !u!114 &114271987238316044
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787445219748314}
+  m_GameObject: {fileID: 1797733337586190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3852184feae310c4798a25f007e0b8fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f3dd849956fa8342a8734447ac8a0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 2
-  backwardMultiplayer: 0.5
-  sprintMultiplayer: 2
-  springInitialLength: 2
-  Mass: 10
-  playerCamera: {fileID: 20857331694297856}
 --- !u!114 &114350552914032878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5703,17 +5698,17 @@ MonoBehaviour:
   m_YAxis:
     Value: 0.5
     m_MaxSpeed: 2
-    m_AccelTime: 0.2
-    m_DecelTime: 0.1
-    m_InputAxisName: Mouse Y
+    m_AccelTime: 0
+    m_DecelTime: 0
+    m_InputAxisName: RightStickY
     m_InputAxisValue: 0
     m_InvertAxis: 1
   m_XAxis:
     Value: 0
     m_MaxSpeed: 300
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
-    m_InputAxisName: Mouse X
+    m_AccelTime: 0
+    m_DecelTime: 0
+    m_InputAxisName: RightStickX
     m_InputAxisValue: 0
     m_InvertAxis: 0
   m_Heading:
@@ -5753,9 +5748,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 0
   m_FollowOffset: {x: 0, y: 2.5, z: -4.93}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_PitchDamping: 0
   m_YawDamping: 0
   m_RollDamping: 0
@@ -5772,9 +5767,9 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_MaxSpeed: 300
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
-    m_InputAxisName: Mouse X
+    m_AccelTime: 0
+    m_DecelTime: 0
+    m_InputAxisName: RightStickX
     m_InputAxisValue: 0
     m_InvertAxis: 0
   m_LegacyRadius: 3.4028235e+38
@@ -5876,9 +5871,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 0
   m_FollowOffset: {x: 0, y: 2.5, z: -4.93}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_PitchDamping: 0
   m_YawDamping: 0
   m_RollDamping: 0
@@ -5895,9 +5890,9 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_MaxSpeed: 300
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
-    m_InputAxisName: Mouse X
+    m_AccelTime: 0
+    m_DecelTime: 0
+    m_InputAxisName: RightStickX
     m_InputAxisValue: 0
     m_InvertAxis: 0
   m_LegacyRadius: 3.4028235e+38
@@ -5917,9 +5912,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 0
   m_FollowOffset: {x: 0, y: 2.5, z: -4.93}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_PitchDamping: 0
   m_YawDamping: 0
   m_RollDamping: 0
@@ -5936,9 +5931,9 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_MaxSpeed: 300
-    m_AccelTime: 0.1
-    m_DecelTime: 0.1
-    m_InputAxisName: Mouse X
+    m_AccelTime: 0
+    m_DecelTime: 0
+    m_InputAxisName: RightStickX
     m_InputAxisValue: 0
     m_InvertAxis: 0
   m_LegacyRadius: 3.4028235e+38
@@ -5956,6 +5951,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114999416061454724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787445219748314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a397153311ff24fad0bb7757c787d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AccerationForce: 100000
+  MaxVelocity: 20
+  TurningForce: 10000
+  MaxAngularVelocity: 180
+  JumpForce: 250
+  SpeedSlow: 80
+  TurnSlow: 200
+  PlayerMass: 80
+  FloatDistance: 0.2
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  Feet: {fileID: 4085131942980306}
 --- !u!124 &124563593858146756
 Behaviour:
   m_ObjectHideFlags: 1
