@@ -16,7 +16,7 @@ public class SoftLockTargeting : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        softLockRaycast = new Ray(transform.position, Vector3.forward));
+        softLockRaycast = new Ray(transform.position, Vector3.forward);
     }
 	
 	// Update is called once per frame
