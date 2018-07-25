@@ -12,6 +12,7 @@ TagManager:
   - blueBall
   - Battery
   - hand
+  - antiCrosshair
   layers:
   - Default
   - TransparentFX
