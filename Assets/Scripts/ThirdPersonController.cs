@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
+
 
 [RequireComponent(typeof(Rigidbody))]
 //[RequireComponent(typeof(ConfigurableJoint))]
-public class ThirdPersonController : MonoBehaviour {
+public class ThirdPersonController : NetworkBehaviour {
 
     // Serielized
     // Movement
@@ -37,13 +39,29 @@ public class ThirdPersonController : MonoBehaviour {
     // Player components
     private Rigidbody RB;
     private Transform Trans;
-    //private ConfigurableJoint CJ;
+
+    // Kevins Spring
+    [SerializeField]
+    private FollowPlayer FP;
+
+
+    //spring variables
+    //[SerializeField]
+    //private ConfigurableJoint joint;
+    public RaycastHit hit;
+
+
 
     // Active attributes
+    [SyncVar]
     private float Speed = 0;
+    [SyncVar]
     private float AngularSpeed = 0;
+    [SyncVar]
     private float Acceleration = 0;
+    [SyncVar]
     private float TurningAcceleration = 0;
+    [SyncVar]
     private bool onGround = true;
 
 
@@ -54,6 +72,7 @@ public class ThirdPersonController : MonoBehaviour {
 
     void Start () {
 
+        //joint = GetComponent<ConfigurableJoint>();
         RB = GetComponent<Rigidbody>();
         RB.mass = PlayerMass;
         //CJ = GetComponent<ConfigurableJoint>();
@@ -63,6 +82,24 @@ public class ThirdPersonController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        //spring settings
+        //SetJointSettings();
+
+
+        //if (Physics.Raycast(transform.position, transform.TransformDirection(-Vector3.up), out hit, Mathf.Infinity))
+        //{
+        //    Debug.DrawRay(transform.position, transform.TransformDirection(-Vector3.up) * hit.distance, Color.yellow);
+
+
+        //}
+        //else
+        //{
+        //    Debug.DrawRay(transform.position, transform.TransformDirection(-Vector3.up) * 1000, Color.white);
+
+        //}
+
+
 
         // Get Axis of Movement
         MoveAxis = Input.GetAxis("Move");
@@ -171,4 +208,9 @@ public class ThirdPersonController : MonoBehaviour {
             RB.AddForce(Trans.up * JumpForce, ForceMode.Impulse);
         }
     }
+
+    //private void SetJointSettings()
+    //{
+    //    joint.connectedAnchor = new Vector3(0, hit.point.y, 0);
+    //}
 }
