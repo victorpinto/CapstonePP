@@ -95,8 +95,8 @@ public class BatteryScript : MonoBehaviour
         //}
         if (c.gameObject.tag == "yellowSlot")
         {
-            GM.openRed();
-            GM.openBlue();
+            //GM.openRed();
+            //GM.openBlue();
             GM.openYellow();
             energydrain();
 
@@ -104,8 +104,8 @@ public class BatteryScript : MonoBehaviour
 
         if (c.gameObject.tag == "doorPad")
         {
-            GM.openRed2();
-            GM.openBlue2();
+            //GM.openRed2();
+            //GM.openBlue2();
             GM.openYellow2();
             energydrain();
 
